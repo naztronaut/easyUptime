@@ -183,6 +183,7 @@ source database/schema.sql
 
 In the main repo directory, install a virtual environment:
 ```bash
+apt install python3-venv
 python3 -m venv venv
 ```
 
@@ -193,7 +194,15 @@ Activate the virtual environment:
 
 Let's install five more dependencies. Installing flask right away isn't necessary unless you want a UI for your web service:
 ```bash
+apt install python3-dev 
+apt install libmysqlclient-dev
 pip install RPi.GPIO flask mysqlclient requests python-crontab
+```
+
+Note: If you are using Maria DB, chnage the second command above to the following:
+
+```bash
+apt install libmariadbclient-dev
 ```
 
 ## Initialize Cron jobs
