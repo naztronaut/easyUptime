@@ -1,0 +1,9 @@
+venv
+config/config.py
+config/__pycache__/*
+__pycache__
+RPi
+.idea
+sites.txt
+emails/emailcred.py
+screenshots
