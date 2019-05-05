@@ -195,7 +195,8 @@ Activate the virtual environment:
 Let's install five more dependencies. Installing flask right away isn't necessary unless you want a UI for your web service:
 ```bash
 apt install python3-dev 
-apt install libmysqlclient-dev
+apt install default-libmysqlclient-dev
+apt install build-essential
 pip install RPi.GPIO flask mysqlclient requests python-crontab
 ```
 

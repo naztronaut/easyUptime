@@ -55,7 +55,7 @@ CREATE TABLE `cronSettings` (
   `comment` varchar(150) NOT NULL,
   `updateDate` timestamp(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
   `cronName` varchar(500) DEFAULT NULL,
-  `cronVal` int(11) DEFAULT NULL,
+  `cronVal` varchar(500) DEFAULT NULL,
   `cronScript` varchar(250) DEFAULT NULL,
   `enabled` tinyint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
